@@ -38,6 +38,14 @@ Yeah, that happens. Does your Google Cloud account have the right permissions? (
 
 `main.tf` specifies the resources that you have. Change the VM
 
+**Q: Where'd you get the image from?**
+
+Image name: https://cloud.google.com/deep-learning-vm/docs/cli
+
+`gcloud compute images list --project deeplearning-platform-release`
+
+Machine types: https://cloud.google.com/compute/docs/machine-types
+
 # The grass on the other side
 
 Armed with the spells of Terraforma, you gaze confidently on the land of your ancestors. Computers are no longer things that you have to fight with, slogging through hours of navigating the setup pages, typing in commands to SSH to your server, making sure you have the right quotas, etc. Instead, you can simply think:

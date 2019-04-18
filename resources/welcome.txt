@@ -1,0 +1,11 @@
+
+Enjoy your new machine! Try running `jupyter lab` and
+connecting to `localhost:8888` in your browser!
+
+Email feedback to: ztang230 at gmail
+ _                       __                                   _
+| |_ ___ _ __ _ __ __ _ / _| ___  _ __ _ __ ___   __ _   __ _(_)
+| __/ _ \ '__| '__/ _` | |_ / _ \| '__| '_ ` _ \ / _` | / _` | |
+| ||  __/ |  | | | (_| |  _| (_) | |  | | | | | | (_| || (_| | |
+ \__\___|_|  |_|  \__,_|_|  \___/|_|  |_| |_| |_|\__,_(_)__,_|_|
+
