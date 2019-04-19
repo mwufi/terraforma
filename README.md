@@ -1,5 +1,5 @@
 
-# Getting VMs really fast
+# 🔥🔥 Getting VMs really fast 🔥🔥
 
 One of the most time-consuming things about starting a new project is going from an idea to a working prototype which runs on a real computer. This repository automates that process, making it really easy to get a sandbox online!
 
