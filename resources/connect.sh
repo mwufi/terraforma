@@ -1,5 +1,6 @@
-# Connects to the VM + Adds the app.py file
+#!/usr/bin/env bash
 
+# Connects to the VM + Adds the app.py file
 cat resources/welcome.txt
 
 ssh-keygen -R `terraform output ip`
