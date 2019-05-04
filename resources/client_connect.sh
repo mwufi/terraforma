@@ -11,4 +11,4 @@ if [[ -z "$CONNECTED_ALREADY" ]]; then
 else
     echo "Connecting..."
     ssh `terraform output ip`
-end
+fi
