@@ -5,7 +5,17 @@ provider "google" {
   region = "us-east1"
 }
 
-// Specify the image we want
+// Specify the image we want.
+
+/////////////////////////////////////////////////////
+// Note:
+// Run `gcloud compute images list --project deeplearning-platform-release`
+// to see what you can replace "tf-latest-gpu" with...
+// Some options:
+// - pytorch-latest-gpu, pytorch-latest-cu92
+// - tf-1-13-cu100, tf-1-11-cu100 (these come with CUDA 10.0)
+/////////////////////////////////////////////////////
+
 data "google_compute_image" "my_image" {
   family  = "tf-latest-gpu"
   project = "deeplearning-platform-release"
@@ -40,7 +50,7 @@ resource "google_compute_instance" "default" {
   }
 
   // Make sure flask is installed
-  metadata_startup_script = "${file("./resources/flask.sh")}"
+  metadata_startup_script = "${file("./resources/provision.sh")}"
 
   // SSH
   metadata {
