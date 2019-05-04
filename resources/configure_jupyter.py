@@ -10,23 +10,16 @@ import os, errno
 from textwrap import dedent
 
 
-def genConfigString(password):
+def genConfigString(password=None):
     return dedent("""
     # 
     # Basic config for password
     # 
     c = get_config()
+    c.NotebookApp.ip = '0.0.0.0'
     c.IPKernelApp.pylab = 'inline'  
     c.NotebookApp.open_browser = False
-    c.NotebookApp.ip = '*'
-
-    # Note: 
-    # Setting ip to '*' hits a small bug in Jupyter
-    # See https://github.com/jupyter/notebook/pull/4139/files
-    c.NotebookApp.allow_remote_access = True
-
-    c.NotebookApp.password = '{}'
-    """.format(password))
+    """)
 
 
 def message(m):
@@ -46,8 +39,7 @@ def getPassword():
 
 
 def writeConfigFile():
-    password = getPassword()
-    s = genConfigString(password)
+    s = genConfigString()
     if not os.path.exists('~/.jupyter'):
         os.mkdir('~/.jupyter')
     
