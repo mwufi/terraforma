@@ -7,6 +7,6 @@ pip install flask
 
 # Configure Jupyter notebook
 jupyter notebook --generate-config
-wget https://raw.githubusercontent.com/mwufi/terraforma/master/resources/jupyter_config.py -O ~/.jupyter/jupyter_notebook_config.py
+wget -O ~/.jupyter/jupyter_notebook_config.py https://raw.githubusercontent.com/mwufi/terraforma/master/resources/jupyter_config.py 
 
 echo "Ready for action!"
